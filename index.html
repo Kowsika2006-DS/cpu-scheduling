@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPU Scheduling</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="heading">
+            
+            <h1>⚙️ CPU Scheduling visualizer</h1>
+            <br>
+            <hr style="margin: 0 170px ;" color="white">
+            <br>
+            <h3>Compare FCFS • SJF • Round Robin</h3>
+            <br>
+            
+        </div>
+
+        <div class="process">
+            <h2>Add Process</h2>
+            <br>
+            <hr>
+            <br>
+            <table id="processTable">
+                <tr>
+                    <th> Process </th>
+                    <th> Arrival Time </th>
+                    <th> Burst Time</th>
+                </tr>
+
+                <tr>
+                    <td>P1</td>
+                    <td><input type="number" class="arrival"></td>
+                    <td><input type="number" class="burst"></td>
+                </tr>
+
+                <tr>
+                    <td>P2</td>
+                    <td><input type="number" class="arrival"></td>
+                    <td><input type="number" class="burst"></td>
+                </tr>
+
+                <tr>
+                    <td>P3</td>
+                    <td><input type="number" class="arrival"></td>
+                    <td><input type="number" class="burst"></td>
+                </tr>
+
+            </table>
+            <br>
+            <button  onclick="addProcess()"    class="btn"> + Add Process </button>
+            <button  onclick="runScheduling()"   class="btn"> Run Scheduling</button>
+            
+        </div>
+
+
+        <div class="card">
+            <br>
+            <h2> Scheduling Result </h2>
+            <hr>
+            <br>
+
+            <div class="best">
+              <p>
+                  <ul>
+                     <li>FCFS Avg Waiting Time :</li>
+                     <br>
+                     <li> SJF Avg Waiting Time : </li>
+                     <br>
+                     <li> Round Robin Avg Waiting Time :</li>
+                 </ul>
+              </p>
+            
+                <br>
+              <h3 class="algo">⭐ Best Algorithum : </h3>
+                
+
+            </div>
+              
+
+        </div>
+
+
+        <!-- <div class="card">
+            <br>
+            <h2 >Gantt chart</h2>
+            <hr>
+            <div id="gantt"></div>
+        </div> -->
+
+        <div id="history">
+            <br>
+            <h2>History</h2>
+            <hr>
+            <div id="his" >
+                <h3  id="noHis" style="display: block;">No History Found!!</h3>
+                <!-- <p >Run 1 : Processes 3 - Best SJF</p>
+                <p>Run 2 : Processes 4 - Best FCFS</p>
+                <p>Run 3 : Processes 2 - Best Round Robin</p> -->
+            </div>
+
+        </div>
+
+        <div>
+            <br>
+            <button   onclick="clearHistory()"  id="butn">Clear History</button>
+            <button onclick="clearProcess()" class="btn">Clear Process</button>
+        </div>
+
+    </div>
+
+    <script src="index.js"></script>
+    
+</body>
+</html>
