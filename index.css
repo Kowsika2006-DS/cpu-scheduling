@@ -136,4 +136,67 @@ button:hover{
     font-family:'Times New Roman', Times, serif;
     /* text-align: center; */
 }
+/* 📱 MOBILE RESPONSIVE */
+@media (max-width: 768px) {
 
+    body{
+        margin: 0;
+        padding: 10px;
+        display: block;
+        width: 100%;
+    }
+
+    .container{
+        width: 100%;
+        margin: 0;
+        padding: 15px;
+    }
+
+    h1{
+        font-size: 22px;
+    }
+
+    h2{
+        font-size: 18px;
+    }
+
+    table{
+        width: 100%;
+        font-size: 12px;
+    }
+
+    th, td{
+        padding: 6px;
+    }
+
+    input{
+        width: 50px;
+        font-size: 12px;
+    }
+
+    button{
+        width: 100%;
+        margin: 8px 0;
+        font-size: 14px;
+    }
+
+    .btn{
+        margin: 10px 0;
+    }
+
+    .best{
+        margin: 0;
+        padding: 15px;
+    }
+
+    #his{
+        margin: 0;
+        padding: 15px;
+    }
+
+    .algo{
+        font-size: 14px;
+        text-align: center;
+    }
+
+}
